@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+		<title>Dico Fou</title>
+		<link rel="stylesheet" type="text/css" href="jlr2.css">
+		
+		<script type="text/javascript" src="dicofou.js"></script>
+		
+		<!--[if !IE 7]>	<style type="text/css">#wrap {display:table;height:100%}</style><![endif]-->
+
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<div class="bantitreout">
+					<img src="bantitre.jpg" alt="banniere">
+				</div>	
+				<br>
+			</div>
+			<div id="main">
+				<div id="container">	
+					<div id="page2">
+						<br><br>
+						<div id="bain">
+							<form name="formdico" id="fordic" method="post" action="value">
+								<center>
+									<table id="tabdico" border="2">
+										<col width="60px">
+										<col width="140px">
+										<col width="140px">
+										<col width="60px">
+										
+										<tr>
+											<td bgcolor="#D7FCAF" colspan="2" height="70px" align="right" valign="middle"><input type="text" id="nompref" name="nopre" size="19" readonly="readonly" value=""></td>
+											<td bgcolor="#D7FCAF" colspan="2" height="70px" align="left" valign="middle"><input type="text" id="nomsuf" name="nosuf" size="19" readonly="readonly" value=""></td>
+										</tr>
+										<tr>
+											<td bgcolor="blue" align="center" colspan="4" height="60px" valign="middle">"><input type="text" id="affnom" name="afno" size="32" readonly="readonly" value=""></td>
+										</tr>
+										<tr>
+											<td colspan="4" bgcolor="#CCCC99" height="60px" valign="middle" align="center"><textarea id="defin" name="definition" cols="47" rows="3" readonly="readonly"></textarea></td>
+										</tr>	
+										<tr>
+											<td bgcolor="#CCCC99" rowspan="2" colspan="2" height="60px" align="center"><input type="button" class="bout1" id="btm" name="manu" value="Manuel" onClick="initmanu(this.form);demmot(this.form);"></td>
+											<td bgcolor="#CCCC99" height="30px" align="center"><input type="button" class="bout2" id="ast" name="autostart" value="Auto start" onClick="motauto(this.form);demmot(this.form);"></td>
+											<td bgcolor="#CCCC99" height="30px" align="center"><img name="led" src="off.gif" alt="auto"></td>
+										</tr>
+										<tr>
+											<td colspan="2" bgcolor="#CCCC99" height="30px" valign="middle" align="center"><input type="button" class="bout2" id="astp" disabled="1" name="autostop" value="Auto stop" onClick="stopauto(this.form);"></td>
+										</tr>
+										<tr>
+											<td colspan="4" bgcolor="#B9FBFD" height="60px" valign="middle" align="left"></td>
+										</tr>	
+									</table>
+									<br><span class="ptextebleu">16626 mots possibles</span>
+								</center>
+								<div id="cadpref">
+									<img name="cadrepref" id="cp" src="cadrev.gif" alt="préfixe">
+								</div>
+								<div id="cadsuf">
+									<img name="cadresuf" id="cs" src="cadrev.gif" alt="suffixe">
+								</div>
+								<div id="arach">
+									<img name="arachn" id="araign" src="transp.gif" alt="araignée">
+								</div>
+							</form>
+							<br><br><br><br><br>
+							<div class="footrub"><img src="footerrub.gif" alt="Eden"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="chap">
+					<img src="chapeau.gif" alt="chapeau">
+				</div>
+				<div id="contboutexit" align="center">
+					<span><img src="exit.gif" alt="exit" onclick="self.close();" onmousedown="this.src='exitp.gif'" onmouseover="this.src='exitp.gif'" onmouseout="this.src='exit.gif'"></span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,309 @@
+/***********************************************/
+/* Feuille de style JLR.                 */
+/***********************************************/
+
+body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		color: #000080;
+		background-color: #8DCFF4;
+		background-image: url('fecbody.gif');
+		background-repeat: no repeat repeat;
+		background-position: left 0px top 0px;
+		font-family : Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+		content:"";
+		height:100%;
+		float:left;
+		width:0;
+		margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+
+html, body {
+		height: 100%;
+}
+
+html, body, #wrap {
+		height: 100%;
+}
+body > #wrap {
+		height: auto; 
+		min-height: 100%;
+}
+ 
+#main {
+		overflow:auto;
+		padding-bottom: 70px;  /* MÊME TAILLE QUE LA HAUTEUR DU FOOTER !! */
+}  
+ 
+#footer {
+		position: relative;
+		margin-top: -70px; /* VALEUR NEGATIVE DE LA HAUTEUR DU FOOTER */
+		height: 70px;
+		clear: both;
+}
+
+code{
+		font-size: small;
+		font-style: italic;
+		font-weight: bold;
+}
+
+hr{
+		font-size: 6px;
+		width: 40%;
+		color: #006400;
+		text-align: center;
+}
+a:hover
+        {
+    color: #309;                                                        
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: x-small;                                                 
+    font-weight: normal;                                        
+    text-decoration: none;
+        }
+a
+        {
+    color: #309;                                                        
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    font-weight: normal;
+    text-decoration: none;
+	border: none;
+        }
+p 	{
+	text-indent:20px;
+		}
+	
+h1, h2, h3, h4, h5, h6 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        padding: 0px;
+        font-weight: bold;
+        margin: 0px;
+        }
+h3{
+ font-size: 100%;
+        }
+.liar{
+	list-style-type: circle;
+		}
+li{
+	list-style-type: none;
+		}
+ul{
+ list-style-type: circle;
+        }
+ul ul{
+ list-style-type: circle;
+        }
+ul ul ul{
+ list-style-type: none;
+        }
+#footer {
+top : bottom;
+width : 900px;
+margin : 0 0 6px 0;
+color : yellow;
+border : 1px solid blue;
+}
+/*********** #contenu ***********/
+
+.ptextebleu {
+		font-size: 11px;
+		color: blue;
+		text-align: center;
+}
+.texterouge{
+		font-size: 16px;
+		color: #FF0000;
+		text-align: center;
+}
+
+.texteverts2{
+		font-size: 14px;
+		color: #006400;
+		text-decoration: underline;
+}
+.titrevertg{
+		font-size: 30px;
+		color: #006400;
+		text-decoration: underline;
+		text-align: center;
+}
+
+#container {
+		position: absolute;
+		left: 317px;
+		top: 150px;		
+		background-color: #BBC79D;
+		border-left: 1px solid #000000;
+		border-right: 1px solid #000000;
+		text-align: left;
+		margin: 0;
+		padding: 0;
+		width: 760px;
+}
+
+.footrub {
+		position: absolute;
+		bottom: 0;
+		left: 19px;
+		width: 722px;
+		height: 70px;
+		margin: 0;
+		padding: 0;
+}
+#page2 {
+		border-left: 12px solid #A5E085;
+		border-right: 12px solid #A5E085;
+		text-align: left;
+		background-color: #FFFFFF;
+		margin: 0px 7px 0px 7px;
+		padding: 10px 35px 0px 35px;
+		width: auto;
+}
+
+#chap{
+		position: absolute;
+		left: 1150px;
+		top: 320px;
+		width: 220px;
+		height: 280px;
+		visibility: visible;
+}
+#cadpref{
+		position: absolute;
+		left: 213px;
+		top: 59px;
+		width: 140px;
+		height: 70px;
+		visibility: visible;
+}
+#cadsuf{
+		position: absolute;
+		left: 380px;
+		top: 59px;
+		width: 140px;
+		height: 70px;
+		visibility: visible;
+}
+#nompref{
+		width: 150px;
+		height: 34px;
+		font-family: verdana;
+		font-size: 20px;
+		color: #3D1100;
+		text-align: center;
+		font-weight: bold;
+		background-color: #FFFFFF;
+		visibility: visible;
+}
+#nomsuf{
+		width: 150px;
+		height: 34px;
+		font-family: verdana;
+		font-size: 20px;
+		color: #3D1100;
+		text-align: center;
+		font-weight: bold;
+		background-color: #FFFFFF;
+		visibility: visible;
+}
+#intro{
+		position: absolute;
+		left: 380px;
+		top: 250px;
+		width: 500px;
+		height:250px;
+		background-color: lightgreen;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		color: blue;
+		border: 12px outset #9ACD32;
+		padding: 15px 15px 15px 15px;
+		visibility: visible;
+}
+#defin{
+		text-align: center;
+		overflow: auto;
+}
+textarea {
+		font-size: 14px;
+		font-weight: bold;
+		color: blue;
+		background-color: #FCF6B0;
+}
+#affnom{
+		width: 260px;
+		height: 32px;
+		font-family: verdana;
+		font-size: 20px;
+		color: #3D1100;
+		text-align: center;
+		font-weight: bold;
+		background-color: #FFFFFF;
+		visibility: visible;
+}
+#tabdico{
+		width: 400px;
+		height: 270px;
+		border: 6px ridge #E1AC3B;
+		table-layout: fixed;
+}
+
+#arach {
+		position: absolute;
+		left: 183px;
+		top: 340px;
+		width: 400px;
+		height: 60px;
+		visibility: visible;
+}
+#contboutexit {
+		position: absolute;
+		left: 170px;
+		top: 355px;
+		height: 30px;
+		width: 80px;
+}
+.bout1 {
+		width: 100px;
+		background-color: lightblue;
+		cursor: hand;
+		font-size: 13px;
+		font-weight: bold;
+		text-align: center;
+		color: blue;
+}
+.bout2 {
+		width: 120px;
+		background-color: lightgreen;
+		cursor: hand;
+		font-size: 15px;
+		font-weight: bold;
+		text-align: center;
+		color: blue;
+}
+.bantitreout{
+		position: absolute;
+		left: 260px;
+		top: 0px;
+		width: 827px;
+		height: 110px;
+		border: 12px outset #9ACD32;
+		padding: 0px 0px 0px 0px;
+		visibility: visible;
+}
+.main{
+		cursor: wait;
+}
+
+
